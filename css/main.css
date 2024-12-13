@@ -10,20 +10,25 @@
 html {
   scroll-behavior: smooth; 
   scroll-padding-top: 200px; 
+  --primary: #f5e9db;
+  --secondary: #fbf5ef;
+  --main-font: #411b0c;
+  --menu-font:#bb7e33;
+  --h-font:#9d523c;
 }
 
 body {
-  background-color: #f5e9db;
+  background-color: var(--primary);
   font-family: "Poppins", serif;
   font-weight: 200;
-  color: #411b0c;
+  color: var(--main-font);
 }
 
 h1,
 h2,
 h3 {
   font-family: "Amaline Trial";
-  color: #9d523c;
+  color: var(--h-font);
 }
 
 main {
@@ -38,16 +43,16 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: #fbf5ef;
+  background: var(--secondary);
   z-index: 1;
-  border-bottom: 1px solid #411b0c;
+  border-bottom: 1px solid var(--main-font);
 }
 
 .header-border {
   height: 1px;
-  background-color: #fbf5ef;
+  background-color: var(--secondary);
   margin-bottom: 10px;
-  border-bottom: 1px solid #411b0c;
+  border-bottom: 1px solid var(--main-font);
   z-index: 1;
 }
 
@@ -59,7 +64,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fbf5ef;
+  background-color: var(--secondary);
   padding: 10px 15px;
   position: relative;
   width: 100%;
@@ -111,18 +116,18 @@ header {
 
 .dropdown-menu {
   display: none;
-  background-color: #fbf5ef;
+  background-color: var(--secondary);
   position: fixed;
   top: 72px;
   left: 0;
   width: 100%;
-  border-top: 1px solid #411b0c;
+  border-top: 1px solid var(--main-font);
   z-index: 3;
 }
 
 .dropdown-menu a {
   font-family: "Amaline Trial";
-  color: #9d523c;
+  color: var(--h-font);
   font-weight: 600;
   text-decoration: none;
   text-align: center;
@@ -130,12 +135,12 @@ header {
   padding: 20px;
   margin-left: -60px;
   transition: background-color 0.3s;
-  border-bottom: 1px solid #411b0c;
+  border-bottom: 1px solid var(--main-font);
 }
 
 .dropdown-menu a:hover {
   background-color: #e8d5c6;
-  color: #411b0c;
+  color: var(--main-font);
 }
 
 
@@ -144,8 +149,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: #f5e9db;
-  border-top: 1px solid #411b0c;
+  background-color: var(--primary);
+  border-top: 1px solid var(--main-font);
   z-index: 1;
 }
 
@@ -201,7 +206,7 @@ top: 4px;
   }
 
 footer {
-  background-color: #fbf5ef;
+  background-color: var(--secondary);
   place-items: center;
   margin-left: -10px;
   margin-right: -10px;
@@ -210,14 +215,14 @@ footer {
   place-items: start center;
   padding-top: 10px;
   padding-bottom: 30px;
-  border-top: 1px solid #411b0c;
+  border-top: 1px solid var(--main-font);
 }
 
 .footer-border {
   height: 1px;
-  background-color: #fbf5ef;
+  background-color: --secondary;
   margin-bottom: 1px;
-  border-bottom: 1px solid #411b0c;
+  border-bottom: 1px solid var(--main-font);
 }
 
 footer h3 {
@@ -227,7 +232,7 @@ footer h3 {
 footer h3,
 h4,
 h5 {
-  color: #bb7e33;
+  color: var(--menu-font);
   font-family: "Poppins", serif;
   font-weight: 500;
 }
@@ -263,16 +268,16 @@ footer p {
       top: 0;
       left: 0;
       width: 100%;
-      background: #fbf5ef;
+      background: var(--secondary);
       z-index: 1;
-      border-bottom: 1px solid #411b0c;
+      border-bottom: 1px solid var(--main-font);
     }
 
     .header-border {
       height: 1px;
-      background-color: #fbf5ef;
+      background-color: var(--secondary);
       margin-bottom: 10px;
-      border-bottom: 1px solid #411b0c;
+      border-bottom: 1px solid var(--main-font);
     }
 
     .nav-container-mobile {
@@ -287,7 +292,7 @@ footer p {
 
     .nav-links a {
       text-decoration: none;
-      color: #bb7e33;
+      color: var(--menu-font);
       transition: color 0.3s ease;
       font-family: "Amaline Trial";
       font-size: 20px;
@@ -296,7 +301,7 @@ footer p {
 
     .nav-links a:hover,
     .nav-links a.active {
-      color: #9d523c;
+      color: var(--h-font);
     }
 
     .logo {
