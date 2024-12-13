@@ -1,0 +1,322 @@
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+@font-face {
+  font-family: "Amaline Trial";
+  src: url("../fonts/Amaline\ Trial.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #f5e9db;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  color: #411b0c;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Amaline Trial";
+  color: #9d523c;
+}
+
+main {
+  padding-top: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fbf5ef;
+  z-index: 1;
+  border-bottom: 1px solid #411b0c;
+}
+
+.header-border {
+  height: 1px;
+  background-color: #fbf5ef;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #411b0c;
+}
+
+.nav-container-web {
+  display: none;
+}
+
+.nav-container-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbf5ef;
+  padding: 10px 15px;
+  position: relative;
+  width: 100%;
+}
+
+.nav-container-mobile li {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 15px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 40px;
+}
+
+.logo img {
+  max-width: 50px;
+}
+
+.cart {
+  position: relative;
+  top: 2px;
+}
+
+.burgermenu {
+  list-style: none;
+}
+
+.burgermenu a {
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  background-color: #fbf5ef;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #411b0c;
+}
+
+.dropdown-menu a {
+  font-family: "Amaline Trial";
+  color: #9d523c;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  margin-left: -50px;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #411b0c;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e8d5c6;
+  color: #411b0c;
+}
+
+footer {
+  background-color: #fbf5ef;
+  place-items: center;
+  margin-left: -10px;
+  margin-right: -10px;
+  text-align: center;
+  position: relative;
+  place-items: start center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-top: 1px solid #411b0c;
+}
+
+.footer-border {
+  height: 1px;
+  background-color: #fbf5ef;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #411b0c;
+}
+
+footer h3 {
+  padding-bottom: 20px;
+}
+
+footer h3,
+h4,
+h5 {
+  color: #bb7e33;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+}
+
+footer h4 {
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+footer h5 {
+  margin-top: 40px;
+}
+
+footer p {
+  font-family: "Poppins", serif;
+  color: #bb7e33;
+  font-weight: 200;
+  line-height: 0.6;
+}
+
+.star {
+  max-width: 30px;
+  padding-bottom: 10px;
+}
+
+/* WEBSITE */
+
+@media (width >= 768px) {
+  @media (width >= 950px) {
+    header {
+      position: fixed;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fbf5ef;
+      z-index: 1;
+      border-bottom: 1px solid #411b0c;
+    }
+
+    .header-border {
+      height: 1px;
+      background-color: #fbf5ef;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #411b0c;
+    }
+
+    .nav-container-mobile {
+      display: none;
+    }
+
+    .nav-links li {
+      display: inline-block;
+      margin: 0;
+      padding-right: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #bb7e33;
+      transition: color 0.3s ease;
+      font-family: "Amaline Trial";
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #9d523c;
+    }
+
+    .logo {
+      max-width: 50px;
+      width: 100%;
+      margin: 10px;
+      margin-top: 10px;
+    }
+
+    .search {
+      position: relative;
+      top: 8px;
+    }
+
+    .cart {
+      position: relative;
+      top: 6px;
+      left: 3px;
+    }
+
+    .profile {
+      position: relative;
+      top: 4px;
+    }
+
+    .nav-container-web {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 30px;
+      margin-left: 30px;
+      padding-top: 10px;
+    }
+
+    .nav-links li:nth-child(1),
+    .nav-links li:nth-child(2),
+    .nav-links li:nth-child(3) {
+      margin-right: 80px;
+    }
+
+    .nav-container-extra {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #f5e9db;
+      border-top: 1px solid #411b0c;
+    }
+
+    .nav-links-extra {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 0px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .nav-links-extra img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    .nav-star {
+      width: 30px;
+    }
+
+   .nav-krystaller,
+   .nav-smykker{
+    position: relative;
+    top: 6px;
+   }
+    .nav-velvere{
+    position: relative;
+    top: 4px;
+    }
+  }
+
+  main {
+    padding-top: 150px;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-bottom: 125px;
+  }
+
+  .grid1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+}
