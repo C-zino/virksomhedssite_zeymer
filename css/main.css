@@ -43,6 +43,7 @@ header {
   background-color: #fbf5ef;
   margin-bottom: 10px;
   border-bottom: 1px solid #411b0c;
+  z-index: 1;
 }
 
 .nav-container-web {
@@ -57,6 +58,7 @@ header {
   padding: 10px 15px;
   position: relative;
   width: 100%;
+  z-index: 2;
 }
 
 .nav-container-mobile li {
@@ -74,7 +76,7 @@ header {
   display: flex;
   align-items: center;
   position: absolute;
-  left: 15px;
+  left: 0;
 }
 
 .nav-right {
@@ -110,6 +112,7 @@ header {
   left: 0;
   width: 100%;
   border-top: 1px solid #411b0c;
+  z-index: 3;
 }
 
 .dropdown-menu a {
@@ -120,7 +123,7 @@ header {
   text-align: center;
   display: block;
   padding: 20px;
-  margin-left: -50px;
+  margin-left: -60px;
   transition: background-color 0.3s;
   border-bottom: 1px solid #411b0c;
 }
@@ -128,6 +131,47 @@ header {
 .dropdown-menu a:hover {
   background-color: #e8d5c6;
   color: #411b0c;
+}
+
+
+.nav-container-extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5e9db;
+  border-top: 1px solid #411b0c;
+  z-index: 1;
+}
+
+.nav-links-extra {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-links-extra img {
+  max-width: 100px;
+  height: auto;
+}
+
+.nav-star {
+  width: 30px;
+}
+
+.nav-krystaller,
+.nav-smykker{
+position: relative;
+top: 6px;
+}
+.nav-velvere{
+position: relative;
+top: 4px;
 }
 
 footer {
@@ -267,44 +311,6 @@ footer p {
       margin-right: 80px;
     }
 
-    .nav-container-extra {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      background-color: #f5e9db;
-      border-top: 1px solid #411b0c;
-    }
-
-    .nav-links-extra {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      gap: 0px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
-
-    .nav-links-extra img {
-      max-width: 100px;
-      height: auto;
-    }
-
-    .nav-star {
-      width: 30px;
-    }
-
-   .nav-krystaller,
-   .nav-smykker{
-    position: relative;
-    top: 6px;
-   }
-    .nav-velvere{
-    position: relative;
-    top: 4px;
-    }
   }
 
   main {
