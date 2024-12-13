@@ -7,6 +7,11 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 200px; 
+}
+
 body {
   background-color: #f5e9db;
   font-family: "Poppins", serif;
@@ -169,10 +174,31 @@ header {
 position: relative;
 top: 6px;
 }
+
 .nav-velvere{
 position: relative;
 top: 4px;
 }
+
+.nav-messer{
+  position: relative;
+  top: 8px;
+  }
+
+.nav-omos,
+.nav-felleskab
+{
+  position: relative;
+  top: 6px;
+  }
+
+  .nav-omos img{
+    width: 70px;
+  }
+
+  .nav-messer img{
+    width: 80px;
+  }
 
 footer {
   background-color: #fbf5ef;
